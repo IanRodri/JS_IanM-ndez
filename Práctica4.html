@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="es" dir="ltr">
+    <title>Factores Primos</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      var Num = prompt("Inserte el número: ");
+      var Fac = [];
+      var Primos = [];
+
+      function FacPrim(Num) {
+        for (i = 1; i <= Num; i++) {
+          if (Num % i == 0) {
+            Fac.push(i);
+            var j = 1;
+            while (i % j != 0) {
+              j += 1;
+            }
+            if (j == i || i == 1) {
+              Primos.push(i);
+              let j = 0;
+            }
+          }
+        }
+      }
+      FacPrim(Num);
+
+      console.log("El número es: " + Num);
+      console.log(Fac);
+      console.log(Primos);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<script type="text/javascript">
+  var Gama = prompt ("¿Dónde se encuentra Gama?");
+  var A = prompt ("Piso del elevdor A: ");
+  var B = prompt ("Piso del elevador B: ");
+  var AG = A - Gama;
+  var BG = B - Gama;
+
+  if (AG < 0){
+    AG = -AG;
+  }
+  if (BG < 0){
+    BG = -BG;
+  }
+
+  if (AG - BG < 0){
+    alert ("El elevador A está más cerca.");
+  }
+  else if (AG - BG > 0){
+    alert ("El elevador B está más cerca.");
+  }
+  else {
+    alert ("Ambos elevadores están a la misma distancia.");
+  }
+</script>
